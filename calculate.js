@@ -6,7 +6,8 @@ const [_1, _2, ...first23Words] = process.argv
 // hardwired 23 lowercase words each one separated by a space:
 const cleanFirst23Words = 'forest mobile exercise coin inherit release inch second lamp upgrade version bench topple fitness nurse lounge super dentist shock road very balcony boring'
 
-if (first23Words.length !== 23) throw new Error(`Yout must provide 23 words. Provided: ${first23Words}`)
+// NO NEED TO CHECK BUT BE CAREFUL.
+//if (first23Words.length !== 23) throw new Error(`Yout must provide 23 words. Provided: ${first23Words}`)
 
 const lastWord = wordlist.find(currentWord => {
   try {
