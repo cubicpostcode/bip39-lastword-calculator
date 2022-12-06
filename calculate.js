@@ -2,7 +2,9 @@ const wordlist = require('./bip39/english.json')
 const mnemonicToEntropy = require('./bip39/needed-functions')
 
 const [_1, _2, ...first23Words] = process.argv
-const cleanFirst23Words = first23Words.join(' ').toLowerCase()
+//const cleanFirst23Words = first23Words.join(' ').toLowerCase()
+// hardwired 23 lowercase words each one separated by a space:
+const cleanFirst23Words = 'forest mobile exercise coin inherit release inch second lamp upgrade version bench topple fitness nurse lounge super dentist shock road very balcony boring'
 
 if (first23Words.length !== 23) throw new Error(`Yout must provide 23 words. Provided: ${first23Words}`)
 
